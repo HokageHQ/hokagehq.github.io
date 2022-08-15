@@ -119,6 +119,7 @@ img{
 	margin-bottom: 50px;
 	margin-top: 30px;
 	font-family: "Josefin Sans";
+	
 }
 
 .item-icon{
@@ -128,9 +129,9 @@ img{
 	
 }
 .item-icon:hover{
+	transform: scale(1.2);
 	transition: .2s linear;
 }
-
 
 .item-icon p{
 	position: absolute;

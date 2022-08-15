@@ -69,6 +69,9 @@ body {
 	background-size: 100% 100%;
 }
 
+/* start hokage fazrul */
+
+/* container in offer wrapper */
 .container{
 	border:2px solid black;
 	padding:30px;
@@ -76,7 +79,7 @@ body {
 	height:450px;
 
 }
-
+/* heading in offer wrapper */
 .heading{
 	font-family: "Josefin Sans";
 	text-align: center;
@@ -97,7 +100,7 @@ body {
 }
 
 
-
+/* change button color while hover */
 .btn:hover{
 	background-color: rgb(253, 225, 0);
 }
@@ -140,6 +143,7 @@ img{
 .button{
 	text-align: center;
 }
+/* button  */
 .btn{
 	background-color: black;
 	padding: 10px;
@@ -155,6 +159,8 @@ img{
 	text-align: center;
 	color: #777;
 }
+/* end hokage fazrul */
+
 /*about start by Hokage Rifqi*/
 
 .about{
@@ -253,6 +259,18 @@ img{
 		font-size: 10vw;
 	}
 
+	.item{
+		width: 50%;
+	}
+
+	.container{
+		height: auto;
+	}
+
+	.bottom-offer{
+		margin-top: 20px;
+	}
+
 }
 @media (max-width:768px){
 
@@ -264,6 +282,29 @@ img{
 	.testimonial-packages .box-container .box .image{
 		height: 30rem;
 		overflow: hidden;
+	}
+
+	.heading p{
+		font-size: 10px;
+	}
+	.heading h3{
+		font-size: 30px;
+	}
+
+	.item{
+		width:100%;
+	}
+
+	.container{
+		height: auto;
+	}
+
+	.btn{
+		font-size: 10px;
+	}
+
+	.bottom-offer{
+		margin-top: 20px;
 	}
 
 }

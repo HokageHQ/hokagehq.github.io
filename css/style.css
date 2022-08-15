@@ -96,7 +96,8 @@ body {
 .heading h3{
 	margin-top: 10px;
 	font-size: 60px;
-	margin-bottom: 1px
+	margin-bottom: 1px;
+	border-bottom: 2px solid black;
 }
 
 

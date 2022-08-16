@@ -470,8 +470,7 @@ a:hover {
 
 
 /* Edited by Hokage Satria Start */
-* {
-    box-sizing: border-box;
+
 }
 footer { 
     font-family: "FitnessFirst-MediumIt";
@@ -481,7 +480,8 @@ footer {
 .footer-container {
     background-color: black;
     color: whitesmoke;
-    height: 240px;
+    height: auto;
+    width: auto;
     padding: 40px;
 }
 

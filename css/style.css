@@ -252,6 +252,13 @@ h2 {
     font-weight: normal;
     font-style: italic;
 }
+.leeson-wrapper container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
 .lessons {
     text-align: center;
     padding: 0px 63px;
@@ -263,8 +270,10 @@ h2 {
     padding: 0px 15px;
 }
 .lesson-icon img {
-    width: 350px;
-    height: 200px;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 p {
     text-align: left;

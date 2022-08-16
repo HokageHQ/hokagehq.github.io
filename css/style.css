@@ -72,27 +72,28 @@ body {
 /* start hokage fazrul */
 
 /* container in offer wrapper */
-.offer-wrapper .container {
+.offer-wrapper .offer-container {
     border: 2px solid black;
     padding: 30px;
     margin: 40px;
     height: 450px;
 }
 /* heading in offer wrapper */
-.heading {
+.offer-heading {
     font-family: "Josefin Sans";
     text-align: center;
     font-weight: normal;
 }
 
-.heading p {
+.offer-heading p {
+    text-align: center;
     margin-top: 0px;
     font-size: 20px;
     margin-bottom: 0;
     color: #777;
 }
 
-.heading h3 {
+.offer-heading h3 {
     margin-top: 10px;
     font-size: 60px;
     margin-bottom: 1px;
@@ -113,12 +114,12 @@ body {
 
 
 .item {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
-  gap: 1.5rem;
-    text-align: center;
+    float: left;
+	text-align: center;
+	width:25%;
+	margin-bottom: 50px;
+	margin-top: 30px;
+	font-family: "Josefin Sans";
 }
 
 .item-icon {
@@ -138,6 +139,7 @@ body {
     width: 100%;
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .button {
@@ -155,10 +157,11 @@ body {
     font-size: 20px;
 }
 
-.bottom-offer {
+.bottom-offer{
     text-align: center;
-    color: #777;
 }
+
+
 /* end hokage fazrul */
 
 

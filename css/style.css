@@ -195,7 +195,7 @@ body {
 
 .testimonial-packages .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 2rem;
 }
 
@@ -210,7 +210,7 @@ body {
 }
 
 .testimonial-packages .box-container .box .image {
-    height: 25rem;
+    height: 20rem;
     overflow: hidden;
 }
 

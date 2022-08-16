@@ -484,8 +484,7 @@ footer {
 .footer-container {
     background-color: black;
     color: whitesmoke;
-    height: auto;
-    width: auto;
+    height: 360px;
     padding: 40px;
 }
 

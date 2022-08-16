@@ -260,6 +260,7 @@ h2 {
   -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
   grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
   gap: 1.5rem;
+  border: none;
 }
 .lessons {
     text-align: center;

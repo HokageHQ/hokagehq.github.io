@@ -249,14 +249,17 @@ body {
 /*events end by Hokage Rifqi*/
 
 .lesson-wrapper {
-    padding: 30px 0px;
     background-color: #f7f7f7;
     text-align: center;
+    height: 730px;
+    padding-bottom: 150px;
+    font-family: sans-serif;
 }
-h2 {
-    font-size: 40px;
+.heading-titlee {
+    font-size: 60px;
     font-weight: normal;
     font-style: italic;
+    text-align: center;
 }
 .lesson-wrapper container {
   display: -ms-grid;
@@ -267,12 +270,13 @@ h2 {
 }
 .lessons {
     text-align: center;
-    padding: 0px 63px;
+    padding-left: 100px;
     width: 100%;
+    
 }
 .lesson-icon {
     float: left;
-    text-align: left;
+    text-align: center;
     padding: 0px 15px;
 }
 .lesson-icon img {
@@ -298,7 +302,7 @@ span {
     font-size: 10px;
     color: grey;
 }
-h4 {
+.judul-art {
     text-align: left;
 }
 .article {
@@ -320,18 +324,16 @@ a:hover {
 .message-wrapper {
     background-color: #f7f7f7;
     width: 100%;
-    border-bottom: 1px solid #eee;
     text-align: center;
-    padding-bottom: 40px;
 }
-.btn {
+.btnn {
     padding: 12px 24px;
     color: white;
     display: inline-block;
     opacity: 0.8;
     border-radius: 4px;
 }
-.message {
+.messagee {
     padding: 15px 40px;
     background-color: rgb(219, 0, 0);
     cursor: pointer;
@@ -339,9 +341,12 @@ a:hover {
     font-size: 15px;
     font-style: italic;
 }
-.message:hover {
+.messagee:hover {
     opacity: 1;
-    color: black;
+    color: white;
+}
+.containe {
+    padding-top: 600px;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -452,7 +457,7 @@ a:hover {
 
 @media (max-width: 1000px) {
     .lessons {
-        padding: 0px 200px;
+        padding-left: 30px;
     }
     .lesson-wrapper {
         width: 800px;
@@ -465,7 +470,7 @@ a:hover {
 
 @media (max-width: 670px) {
     .lessons {
-        padding: 0px 10px;
+        padding-left: 30px;
     }
     .lesson-icon {
         text-align: left;
@@ -485,7 +490,7 @@ footer {
     background-color: black;
     color: whitesmoke;
     height: 360px;
-    padding: 40px;
+    padding: 45px;
 }
 
 .footer-logo {

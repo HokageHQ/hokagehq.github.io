@@ -254,7 +254,7 @@ h2 {
     font-weight: normal;
     font-style: italic;
 }
-.leeson-wrapper container {
+.lesson-wrapper container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];

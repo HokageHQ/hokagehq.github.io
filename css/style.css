@@ -467,3 +467,82 @@ a:hover {
         text-align: left;
     }
 }
+
+
+/* Edited by Hokage Satria Start */
+* {
+    box-sizing: border-box;
+}
+footer { 
+    font-family: "FitnessFirst-MediumIt";
+    font-style: italic;
+  }
+
+.footer-container {
+    background-color: black;
+    color: whitesmoke;
+    height: 240px;
+    padding: 40px;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-logo img {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    position: relative;
+    top: 8px;
+    overflow: hidden;
+    
+}
+
+.listname {
+    list-style: none;
+    padding-top: 6px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-listname {
+    float: left;
+    width: 25%;
+    text-align: left;
+}
+
+.footer-listname li {
+    margin-bottom: 2px;
+    padding-top: 6px;
+}
+
+.footer-listname p {
+    font-size: 14px;
+}
+
+.join-online {
+    color: forestgreen;
+    font-weight: bold;
+    display: block;
+    padding-top: 6px;
+    text-decoration: none;
+}
+
+.footer-listname img {
+    width: 10%;
+    padding-right: 2px;
+    display: inline-block;
+}
+
+.sperator {
+    height: 2px;
+    margin-top: 15px;
+    width: 25px;
+    display: block;
+    background-color: crimson;
+}
+
+/* Edited by Hokage Satria End */

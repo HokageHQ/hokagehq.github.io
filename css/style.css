@@ -112,10 +112,7 @@ body {
 }
 
 /* change button color while hover */
-.btn:hover {
-    background-color: rgb(253, 225, 0);
-    color: black;
-}
+
 
 .item-icon img {
     width: 200px;
@@ -154,19 +151,46 @@ body {
     text-align: center;
 }
 
+.txt-contents{
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #b3aeb5;
+    color: #414141;
+}
+
 .button {
     text-align: center;
+    margin-top: 500px;
 }
 /* button  */
 .btn {
-    background-color: black;
     padding: 10px;
-    color: white;
     font-family: "Josefin Sans";
     font-style: oblique;
+    color: white;
     text-decoration: none;
     border-radius: 4px;
     font-size: 20px;
+    background:
+    linear-gradient(rgb(253, 225, 0) 0 0) top    /100% var(--d, 0%) no-repeat,
+    linear-gradient(rgb(0, 0, 0) 0 0) bottom /100% var(--d, 0%) no-repeat;
+    transition: 0.5s;
+}
+
+.offer{
+    background-color: black;
+}
+
+.new{
+    background-color: black;
+}
+
+
+.btn:hover {
+    --d: 100%;
+    color: rgb(0, 0, 0);
 }
 
 .bottom-offer p{
@@ -386,6 +410,10 @@ a:hover {
     .bottom-offer {
         margin-top: 20px;
     }
+
+    .txt-contents{
+        font-size: 8px;
+    }
 }
 @media (max-width: 768px) {
     .testimonial-packages .box-container {
@@ -419,6 +447,10 @@ a:hover {
 
     .bottom-offer {
         margin-top: 20px;
+    }
+
+    .txt-contents{
+        font-size: 15px;
     }
 }
 

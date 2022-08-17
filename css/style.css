@@ -14,6 +14,7 @@
 
 body {
     margin: 0;
+    font-family: "Josefin Sans";
 }
 
 /* Style the header with a grey background and some padding */
@@ -61,12 +62,145 @@ body {
     font-family: "Josefin Sans";
 }
 
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+/* a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-between {
+    justify-content: space-between;
+} */
+/*header*/
+/* .header {
+    background-color: var(--color-1);
+    padding: 12px 0;
+    position: relative;
+}
+.header .logo,
+.header .nav {
+    padding: 0 15px;
+}
+.header .logo a {
+    font-size: 30px;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.header .nav ul li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.header .nav ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 10px 0;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: capitalize;
+    transition: all 0.5s ease;
+}
+.header .nav ul li a:hover,
+.header .nav ul li a.active {
+    color: #ffffff;
+}
+.header #nav-check {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.nav-toggler {
+    height: 34px;
+    width: 44px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.nav-toggler span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: var(--color-1);
+    position: relative;
+}
+.nav-toggler span::before,
+.nav-toggler span::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    left: 0;
+}
+.nav-toggler span::before {
+    top: -6px;
+}
+.nav-toggler span::after {
+    top: 6px;
+}
+@media (max-width: 991px) {
+    .nav-toggler {
+        display: flex;
+    }
+    .header .nav {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: var(--color-1);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        opacity: 0;
+        visibility: hidden;
+    }
+    .header .nav ul li {
+        display: block;
+        margin: 0;
+    }
+    .header #nav-check:checked ~ .nav {
+        opacity: 1;
+        visibility: visible;
+    }
+    .header #nav-check:focus ~ .nav-toggler {
+        box-shadow: 0 0 15px #000000;
+    }
+    .header #nav-check:checked ~ .nav-toggler span {
+        background-color: transparent;
+    }
+    .header #nav-check:checked ~ .nav-toggler span::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .header #nav-check:checked ~ .nav-toggler span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+} */
+
 /* Jumbotron After Navbar */
 .jumbotron {
     width: 100%;
-    height: 600px;
+    height: 540px;
     background-image: url(../img/header.jpg);
     background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
 
 /* start hokage fazrul */
@@ -97,22 +231,21 @@ body {
 .offer-heading h3 {
     margin-top: 10px;
     font-size: 60px;
-    background: 
-    linear-gradient(currentColor 0 0) left  var(--p, 50%) bottom 0 /var(--d, 10%) 3px no-repeat,
-    linear-gradient(currentColor 0 0) right var(--p, 50%) bottom 0 /var(--d, 10%) 3px no-repeat;
+    background: linear-gradient(currentColor 0 0) left var(--p, 50%) bottom 0 /
+            var(--d, 10%) 3px no-repeat,
+        linear-gradient(currentColor 0 0) right var(--p, 50%) bottom 0 /
+            var(--d, 10%) 3px no-repeat;
     transition: 0.3s, background-position 0.3s 0.3s;
     cursor: pointer;
 }
 
-.offer-heading h3:hover{
+.offer-heading h3:hover {
     --d: 50%;
     --p: 50.1%;
     transition: cubic-bezier(0, 500, 1, 500) 0.3s, background-size 0.3s 0.3s;
-
 }
 
 /* change button color while hover */
-
 
 .item-icon img {
     width: 200px;
@@ -120,15 +253,13 @@ body {
     border-radius: 4px;
 }
 
-
-
 .item {
     float: left;
-	text-align: center;
-	width:25%;
-	margin-bottom: 50px;
-	margin-top: 30px;
-	font-family: "Josefin Sans";
+    text-align: center;
+    width: 25%;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-family: "Josefin Sans";
 }
 
 .item-icon {
@@ -151,7 +282,7 @@ body {
     text-align: center;
 }
 
-.txt-contents{
+.txt-contents {
     width: 80%;
     display: inline-block;
     margin-top: 20px;
@@ -173,112 +304,106 @@ body {
     text-decoration: none;
     border-radius: 4px;
     font-size: 20px;
-    background:
-    linear-gradient(rgb(253, 225, 0) 0 0) top    /100% var(--d, 0%) no-repeat,
-    linear-gradient(rgb(0, 0, 0) 0 0) bottom /100% var(--d, 0%) no-repeat;
+    background: linear-gradient(rgb(253, 225, 0) 0 0) top / 100% var(--d, 0%)
+            no-repeat,
+        linear-gradient(rgb(0, 0, 0) 0 0) bottom / 100% var(--d, 0%) no-repeat;
     transition: 0.5s;
 }
 
-.offer{
+.offer {
     background-color: black;
 }
 
-.new{
+.new {
     background-color: black;
 }
-
 
 .btn:hover {
     --d: 100%;
     color: rgb(0, 0, 0);
 }
 
-.bottom-offer p{
+.bottom-offer p {
     text-align: center;
 }
 
-
 /* end hokage fazrul */
-
 
 /*about start by Hokage Rifqi*/
 
-.about{
-	
-	margin: 5rem 5rem;
+.about {
+    margin: 5rem 5rem;
 }
 
-
-.about .content{
-	text-align: center;
+.about .content {
+    text-align: center;
 }
 
-.about .content p{
-	font-size: 1.5rem;
-	color: var(--light-black);
-	line-height: 2;
-	padding: 1rem 0;
+.about .content p {
+    font-size: 1.5rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
 }
 
 /*about end by Hokage Rifqi*/
 
 /*events start by Hokage Rifqi*/
 
-.heading-title{
-	text-align: center;
-	margin-bottom: 5rem;
-	font-size: 4rem;
-	text-transform: uppercase;
-	color: var(--black);
+.heading-title {
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: var(--black);
 }
 
-.testimonial-packages{
-	background: var(--white);
-	margin: 5rem 5rem;
+.testimonial-packages {
+    background: var(--white);
+    margin: 5rem 5rem;
 }
 
-.testimonial-packages .box-container{
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-	gap: 2rem;
+.testimonial-packages .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
 }
 
-.testimonial-packages .box-container .box{
-	border: var(--border);
-	box-shadow: var(--box-shadow);
-	background: var(--white);
+.testimonial-packages .box-container .box {
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    background: var(--white);
 }
 
-.testimonial-packages .box-container .box:hover .image img{
-	transform: scale(1.1);
+.testimonial-packages .box-container .box:hover .image img {
+    transform: scale(1.1);
 }
 
-.testimonial-packages .box-container .box .image{
-	height: 20rem;
-	overflow: hidden;
+.testimonial-packages .box-container .box .image {
+    height: 20rem;
+    overflow: hidden;
 }
 
-.testimonial-packages .box-container .box .image img{
-	width: 100%;
-	transition: .2s linear;
-	
+.testimonial-packages .box-container .box .image img {
+    width: 100%;
+    transition: 0.2s linear;
 }
 
-.testimonial-packages .box-container .box .content{
-	padding: 2rem;
-	text-align: center;
+.testimonial-packages .box-container .box .content {
+    padding: 2rem;
+    text-align: center;
 }
 
-.testimonial-packages .box-container .box .content h3{
-	font-size: 2rem;
-	color: var(--black);
+.testimonial-packages .box-container .box .content h3 {
+    font-size: 2rem;
+    color: var(--black);
 }
 
-.testimonial-packages .box-container .box .content p{
-	font-size: 1rem;
-	color: var(--light-black);
-	line-height: 2;
-	padding: 1rem 0;
+.testimonial-packages .box-container .box .content p {
+    font-size: 1rem;
+    color: var(--light-black);
+    line-height: 2;
+    padding: 1rem 0;
 }
 
 /*events end by Hokage Rifqi*/
@@ -297,17 +422,16 @@ body {
     text-align: center;
 }
 .lesson-wrapper container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
-  gap: 1.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(29rem, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+    gap: 1.5rem;
 }
 .lessons {
     text-align: center;
     padding-left: 100px;
     width: 100%;
-    
 }
 .lesson-icon {
     float: left;
@@ -315,10 +439,10 @@ body {
     padding: 0px 15px;
 }
 .lesson-icon img {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 p {
     text-align: left;
@@ -411,7 +535,7 @@ a:hover {
         margin-top: 20px;
     }
 
-    .txt-contents{
+    .txt-contents {
         font-size: 8px;
     }
 }
@@ -449,7 +573,7 @@ a:hover {
         margin-top: 20px;
     }
 
-    .txt-contents{
+    .txt-contents {
         font-size: 15px;
     }
 }
@@ -497,7 +621,6 @@ a:hover {
     }
 }
 
-
 @media (max-width: 1000px) {
     .lessons {
         padding-left: 30px;
@@ -520,11 +643,9 @@ a:hover {
     }
 }
 
-
 /* Edited by Hokage Satria Start */
 
-
-footer { 
+footer {
     font-family: "FitnessFirst-MediumIt";
     font-style: italic;
 }
@@ -548,7 +669,6 @@ footer {
     position: relative;
     top: 8px;
     overflow: hidden;
-    
 }
 
 .listname {

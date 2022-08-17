@@ -120,6 +120,7 @@ body {
 	height: 15rem;
 	width: 15rem;
 	border-radius: 50%;
+	margin-bottom: 2rem;
 	
 }
 
@@ -294,6 +295,12 @@ body {
 	width: 20rem;
 	border-radius: 30%;
 	margin-bottom: 1rem;
+}
+.blogs-icon p {
+	font-size: 1rem;
+	color: var(--light-black);
+	line-height: 2;
+	padding: 1rem 0;
 }
 
 
